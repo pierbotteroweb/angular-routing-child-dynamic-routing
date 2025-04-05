@@ -41,3 +41,6 @@ ng g c users/user-detail --skip-tests --inline-template --inline-style
 - [Route Guards](https://angular.io/guide/router#milestone-5-route-guards)
 - [Child Routes](https://angular.io/guide/router#child-routing-component)
 - [Route Parameters (Dynamic)](https://angular.io/guide/router#activated-route-in-action)
+
+## 🤖 Powered by ChatGPT  
+This project includes insights and suggestions generated with the help of [ChatGPT](https://chatgpt.com/c/67f03b9e-3e54-8002-945d-304a2ee14d89).  
