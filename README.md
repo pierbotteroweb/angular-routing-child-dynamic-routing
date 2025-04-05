@@ -1,27 +1,43 @@
-# AngularRoutingChildDynamicRouting
+## 🧠 What You'll Learn
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.4.
+This mini-project covers three super useful Angular Routing features in a simple, beginner-friendly way:
 
-## Development server
+### 🛡️ Route Guards
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Route Guards are like security gates for your app. They control who can access certain routes.  
+For example, only logged-in users should see the dashboard, right? A `CanActivate` guard can check if the user is logged in before letting them through.
 
-## Code scaffolding
+### 🧱 Child Routes
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Think of Child Routes as sub-pages inside a bigger page.  
+For example, inside the `/dashboard`, we have `/dashboard/profile` and `/dashboard/settings`. These are **nested routes** and help keep things organized.
 
-## Build
+### 🔁 Dynamic Routing
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Dynamic routes let you create pages based on user-specific data.  
+Instead of hardcoding every user page, we use a route like `/users/:id` where `:id` changes depending on the user.  
+So we can visit `/users/1`, `/users/2`, etc., and display info for each user dynamically.
 
-## Running unit tests
+# CLI to create Home & Login
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ng g c home --skip-tests --inline-template --inline-style
+ng g c login --skip-tests --inline-template --inline-style
 
-## Running end-to-end tests
+# CLI to create Dashboard and its children
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+ng g c dashboard/dashboard --skip-tests --inline-template --inline-style
+ng g c dashboard/profile --skip-tests --inline-template --inline-style
+ng g c dashboard/settings --skip-tests --inline-template --inline-style
 
-## Further help
+# CLI to create Users and User Detail
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+ng g c users/users --skip-tests --inline-template --inline-style
+ng g c users/user-detail --skip-tests --inline-template --inline-style
+
+
+## 📚 Learn More from Angular Docs
+
+- [Routing & Navigation](https://angular.io/guide/router)
+- [Route Guards](https://angular.io/guide/router#milestone-5-route-guards)
+- [Child Routes](https://angular.io/guide/router#child-routing-component)
+- [Route Parameters (Dynamic)](https://angular.io/guide/router#activated-route-in-action)
